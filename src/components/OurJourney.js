@@ -79,10 +79,11 @@ grid-gap: 24px;
 const BottomLeft = styled.div`
 display: flex;
 flex-direction: column;
-margin: 24px 0;
+margin: 24px 0 24px 56px;
 
 @media only screen and (max-width:860px){
     grid-area: BottomLeft;
+    margin: 24px 0 ;
 }
 `
 const Header = styled(Header3)`
