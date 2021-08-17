@@ -43,6 +43,13 @@ width:100%;
 background: ${WalletTheme.secondary};
 color:  ${WalletTheme.tertiary};
 height:85px;
+
+@media only screen and (max-width:850px){
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
 `
 const Wrapper = styled(NavbarContainer)`
 
@@ -105,7 +112,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.6;
-
+cursor: pointer;
 a{
     margin: 0;
     width: 100%;
@@ -132,7 +139,7 @@ display: none;
 flex-direction: column;
 width: 32px;
 height: 80px;
-position: absolute;
+position: fixed;
 top: 32px;
 cursor: pointer;
 right: 16px;
