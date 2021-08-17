@@ -4,6 +4,7 @@ import {NavbarContainer} from '../container/Wrapper'
 import { mainButton } from '../styles/Buttons'
 import { WalletTheme } from '../styles/ColorStyles'
 import logo from '../assets/logo.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
         <Body>
             <Wrapper>
 <Logocover>
-    <Logoimg src={logo} alt="Wallet Surgery Logo"/>
+  <Link to='/'>  <Logoimg src={logo} alt="Wallet Surgery Logo"/></Link>
 </Logocover>
 <Navlink toggle={menu}>
     <Navlinksul>
@@ -62,6 +63,7 @@ position: relative;
 const Logocover = styled.div`
 height: 34px;
 max-width: 305px;
+cursor: pointer;
 `
 const Logoimg = styled.img`
 height: 34px;

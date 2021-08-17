@@ -34,6 +34,12 @@ position: relative;
     width: 100%;
     z-index: 1;
 }
+
+@media only screen and (max-width:860px){
+
+    height: 650px;
+
+}
 `
 
 const WrapperContainer = styled(Container)`
