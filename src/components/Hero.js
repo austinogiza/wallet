@@ -48,5 +48,11 @@ const TitleText = styled(Header1)`
 max-width: 420px;
 width: 100%;
 padding: 64px 0 0 0;
+
+@media only screen and (max-width:860px){
+
+    padding: 96px 0 0 0;
+
+}
 `
 export default Hero

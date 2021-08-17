@@ -38,13 +38,14 @@ const OurJourney = () => {
 
 
 const Body = styled.div`
-height: 660px;
+  min-height: 660px;
+  height: 100%;
 width: 100%;
 background: ${WalletTheme.tertiary};
 color: #fff;
 @media only screen and (max-width:860px){
-    height: 100%;
-    min-height: 660px;
+   
+  
 }
 `
 const Wrapper = styled(Container)`
@@ -77,6 +78,8 @@ grid-gap: 24px;
 const BottomLeft = styled.div`
 display: flex;
 flex-direction: column;
+margin: 24px 0;
+
 `
 const Header = styled(Header3)`
 

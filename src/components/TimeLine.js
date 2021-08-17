@@ -202,10 +202,17 @@ width: 5px;
 background: ${WalletTheme.primary};
 height: 100%;
 position: absolute;
-min-height: 2100px;
+min-height: 2220px;
 left: 50%;
+top: 5px;
 transform: translateX(-50%);
 z-index: 1;
+
+
+@media only screen and (max-width:860px){
+    min-height: 4020px;
+
+}
 `
 const BottomLeft = styled.div`
 display: flex;
@@ -242,7 +249,7 @@ z-index: 2;
 `
 const Bottomimg = styled.img`
 max-height: 450px;
-max-width: 624px;
+max-width: 600px;
 
 height: 100%;
 width: 100%;
@@ -261,7 +268,7 @@ const Bottomnumber = styled.div`
 height: 82px;
 width: 82px;
 background: ${WalletTheme.primary};
-border: 3px solid ${WalletTheme.secondary};
+border: 6px solid ${WalletTheme.secondary};
 border-radius: 50%;
 display: flex;
 justify-content: center;
@@ -276,8 +283,8 @@ color: ${WalletTheme.white};
 
 @media only screen and (max-width:550px){
     font-size: 24px;
-    height: 40px;
-width: 40px;
+    height: 64px;
+width: 64px;
 }
 
 `

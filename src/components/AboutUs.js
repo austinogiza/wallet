@@ -25,11 +25,11 @@ const AboutUs = () => {
                         <Bodytextp>
                         wallet.surgery is a service proposed by Altcoinomy SA, the premier facilitator in cryptocurrency due diligence and institutional trading, based in Switzerland.
                         </Bodytextp>
-                        <br />
+                        
                         <Bodytextp>
 Altcoinomy SA is regulated by Swiss law.
 </Bodytextp>
-<br />
+
 <Bodytextp>
 Please visit altcoinomy.com for more information.
 </Bodytextp>
@@ -44,15 +44,12 @@ Please visit altcoinomy.com for more information.
 
 
 const Body = styled.div`
-height: 730px;
+  height: 100%;
+    min-height: 600px;
 width: 100%;
 overflow: hidden;
 background: ${WalletTheme.secondary};
-color:  ${WalletTheme.primary};;
-@media only screen and (max-width:860px){
-    height: 100%;
-    min-height: 660px;
-}
+color:  ${WalletTheme.primary};
 `
 const Wrapper = styled(Container)`
 display: flex;
@@ -85,7 +82,7 @@ grid-gap: 24px;
 const BottomLeft = styled.div`
 display: flex;
 flex-direction: column;
-
+margin: 40px 0;
 `
 const Header = styled(Header3)`
 

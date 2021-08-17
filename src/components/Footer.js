@@ -108,7 +108,7 @@ position: relative;
 ::after{
     content:"";
     position: absolute;
-    height: 100%;
+    height: 230px;
     width: 5px;
     background: ${WalletTheme.tertiary};
     top: 0;
