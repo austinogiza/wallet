@@ -187,11 +187,11 @@ const Titletext = styled(Header2)`
 const Bottom = styled.div`
 display: flex;
 flex-direction: row;
-margin: 56px 0;
+margin: 64px 0;
 position: relative;
 
 @media only screen and (max-width:860px){
- 
+    
     flex-direction: column;
     align-items: center;
     display: grid;
