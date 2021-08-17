@@ -41,6 +41,7 @@ message
         setLoading(true)
 
         setSent(true)
+        setForm(initial)
 
     }
 
