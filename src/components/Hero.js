@@ -55,7 +55,7 @@ const TitleText = styled(Header1)`
 
  position: relative;
  z-index: 2;
-max-width: 420px;
+max-width: 450px;
 width: 100%;
 padding: 64px 0 0 0;
 
