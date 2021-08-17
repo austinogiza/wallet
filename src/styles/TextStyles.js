@@ -39,7 +39,70 @@ line-height: 1.5;
 
 `
 
+export const Header4 = styled.h3`
 
+font-family: "Work Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.5;
+
+@media only screen and (max-width:550px){
+    font-size: 18px;
+}
+
+`
+
+
+export const footerLargeText = styled.p`
+
+font-family: "Work Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+
+@media only screen and (max-width:550px){
+    font-size: 21px;
+}
+
+`
+export const footerMediumText = styled.p`
+
+font-family: "Work Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+
+@media only screen and (max-width:550px){
+    font-size: 13px;
+}
+
+`
+export const footerMediumBoldText = styled.h3`
+
+font-family: "Work Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.5;
+
+@media only screen and (max-width:550px){
+    font-size: 13px;
+}
+
+`
+export const footerSmallText = styled.p`
+
+font-family: "Work Sans";
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+
+
+`
 export const Header2 = styled.h2`
 
 
