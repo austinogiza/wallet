@@ -8,9 +8,22 @@ font-weight: 400;
 line-height: 1.6;
 
 @media only screen and (max-width:550px){
-    font-size: 17px;
+    font-size: 18px;
 }
 `
+export const bodyText2 = styled.p`
+font-family: "Work Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+
+@media only screen and (max-width:550px){
+    font-size: 16px;
+}
+`
+
+
 
 export const Header3 = styled.h3`
 

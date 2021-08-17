@@ -65,6 +65,10 @@ width: 100%;
 
 margin: 56px 0 ;
 text-align: center;
+
+@media only screen and (max-width:860px){
+    margin: 40px 0 ;
+}
 `
 const Titletext = styled(Header2)`
 

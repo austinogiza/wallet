@@ -23,6 +23,17 @@ const Body = styled.div`
 height: 809px;
 width: 100%;
 background: url(${img}) no-repeat center center/cover;
+position: relative;
+::after{
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
 `
 
 const WrapperContainer = styled(Container)`
@@ -32,6 +43,8 @@ const WrapperContainer = styled(Container)`
 const TitleText = styled(Header1)`
  color: #fff;
 
+ position: relative;
+ z-index: 2;
 max-width: 420px;
 width: 100%;
 padding: 64px 0 0 0;
