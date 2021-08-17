@@ -40,10 +40,14 @@ position: relative;
     height: 650px;
 
 }
+@media only screen and (max-width:460px){
+
+height: 500px;
+
+}
 `
 
 const WrapperContainer = styled(Container)`
-
 
 `
 const TitleText = styled(Header1)`
@@ -58,6 +62,12 @@ padding: 64px 0 0 0;
 @media only screen and (max-width:860px){
 
     padding: 96px 0 0 0;
+
+}
+
+@media only screen and (max-width:460px){
+
+    padding: 112px 0 0 0;
 
 }
 `
