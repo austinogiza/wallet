@@ -250,7 +250,7 @@ z-index: 2;
 const Bottomimg = styled.img`
 max-height: 450px;
 max-width: 600px;
-
+min-height: 250px;
 height: 100%;
 width: 100%;
 margin: 4px 0 0 0;
