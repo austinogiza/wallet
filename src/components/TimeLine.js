@@ -191,9 +191,16 @@ margin: 56px 0;
 position: relative;
 
 @media only screen and (max-width:860px){
-    grid-template-columns: repeat(1,1fr);
+ 
     flex-direction: column;
     align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "BottomTop"
+    "Number"
+    "Text";
+    align-items: center;
+  justify-items: center;
 }
 `
 
@@ -213,6 +220,10 @@ z-index: 1;
     min-height: 4020px;
 
 }
+@media only screen and (max-width:460px){
+    min-height: 4250px;
+
+}
 `
 const BottomLeft = styled.div`
 display: flex;
@@ -222,10 +233,11 @@ max-width: 555px;
 width: 100%;
 position: relative;
 z-index: 2;
+
 @media only screen and (max-width:860px){
   text-align: center;
   background:${WalletTheme.secondary};
-
+grid-area: Text;
   p{
       text-align: left;
   }
@@ -246,6 +258,10 @@ max-width: 624px;
 width: 100%;
 position: relative;
 z-index: 2;
+@media only screen and (max-width:860px){
+grid-area: BottomTop;
+
+}
 `
 const Bottomimg = styled.img`
 max-height: 450px;
@@ -254,6 +270,10 @@ min-height: 250px;
 height: 100%;
 width: 100%;
 margin: 4px 0 0 0;
+@media only screen and (max-width:460px){
+    min-height: 250px;
+    max-height: 350px;
+}
 `
 const Bottommiddle = styled.div`
 margin: 0 16px;
@@ -261,6 +281,7 @@ position: relative;
 z-index: 2;
 @media only screen and (max-width:860px){
     margin: 24px 0;
+    grid-area: Number;
 
 }
 `

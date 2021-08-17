@@ -184,6 +184,9 @@ width: 100%;
 align-items: flex-start;
 padding: 24px;
 justify-content: center;
+@media only screen and (max-width:460px){
+    padding: 16px;
+}
 
 `
 const Bottomrow = styled.div`
@@ -280,6 +283,10 @@ transition: 0.3s ease;
 ${Bodytextp}:hover &{
     color: ${WalletTheme.tertiary};
 }
+
+@media only screen and (max-width:460px){
+    margin: 0 16px 0 0;
+}
 `
 const MailIcon = styled(FiMail)`
 
@@ -293,6 +300,9 @@ cursor: pointer;
 margin: 0 24px 0 0;
 ${Bodytextp}:hover &{
     color: ${WalletTheme.tertiary};
+}
+@media only screen and (max-width:460px){
+    margin: 0 16px 0 0;
 }
 `
 const TelegramIcon = styled(FaTelegramPlane)`
@@ -309,6 +319,9 @@ margin: 0 24px 0 0;
 ${Bodytextp}:hover &{
     color: ${WalletTheme.tertiary};
 }
+@media only screen and (max-width:460px){
+    margin: 0 16px 0 0;
+}
 `
 const SkypeIcon = styled(AiOutlineSkype)`
 
@@ -322,6 +335,9 @@ transition: 0.3s ease;
 -webkit-transition: 0.3s ease;
 ${Bodytextp}:hover &{
     color: ${WalletTheme.tertiary};
+}
+@media only screen and (max-width:460px){
+    margin: 0 16px 0 0;
 }
 `
 

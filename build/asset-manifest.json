@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f5e4c064.chunk.css",
-    "main.js": "/static/js/main.3cf75e9d.chunk.js",
-    "main.js.map": "/static/js/main.3cf75e9d.chunk.js.map",
+    "main.js": "/static/js/main.51327b75.chunk.js",
+    "main.js.map": "/static/js/main.51327b75.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.023524fb.js",
     "runtime-main.js.map": "/static/js/runtime-main.023524fb.js.map",
     "static/js/2.75cc1a95.chunk.js": "/static/js/2.75cc1a95.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.f5e4c064.chunk.css.map": "/static/css/main.f5e4c064.chunk.css.map",
     "static/js/2.75cc1a95.chunk.js.LICENSE.txt": "/static/js/2.75cc1a95.chunk.js.LICENSE.txt",
     "static/media/Delivery.c90553a6.png": "/static/media/Delivery.c90553a6.png",
-    "static/media/about.bff0eb6d.png": "/static/media/about.bff0eb6d.png",
+    "static/media/about.761b910a.png": "/static/media/about.761b910a.png",
     "static/media/altcoinomy.c2e1b9dc.svg": "/static/media/altcoinomy.c2e1b9dc.svg",
     "static/media/card.986b3418.png": "/static/media/card.986b3418.png",
     "static/media/chip.f94a15a9.png": "/static/media/chip.f94a15a9.png",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.023524fb.js",
     "static/js/2.75cc1a95.chunk.js",
     "static/css/main.f5e4c064.chunk.css",
-    "static/js/main.3cf75e9d.chunk.js"
+    "static/js/main.51327b75.chunk.js"
   ]
 }

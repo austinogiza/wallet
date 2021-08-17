@@ -18,6 +18,7 @@ const AboutUs = () => {
                         <Bottomimg src={img} alt="Wallet surgery"/>
 
                     </Bottomright>
+                    <Container>
                     <BottomLeft>
                         <Header>
                         Born in 2019, here to stay
@@ -35,6 +36,7 @@ Please visit altcoinomy.com for more information.
 </Bodytextp>
                      
                     </BottomLeft>
+                    </Container>
 
                 </Bottom>
             </Wrapper>
@@ -51,7 +53,7 @@ overflow: hidden;
 background: ${WalletTheme.secondary};
 color:  ${WalletTheme.primary};
 `
-const Wrapper = styled(Container)`
+const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 

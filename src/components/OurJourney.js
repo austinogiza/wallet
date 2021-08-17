@@ -12,6 +12,7 @@ const OurJourney = () => {
 <Titletext>Our Journey</Titletext>
                 </Title>
                 <Bottom >
+                    <Container>
                     <BottomLeft>
                         <Header>
                         Get in touch 
@@ -24,7 +25,7 @@ const OurJourney = () => {
 <p>"Any sufficiently advanced technology is indistinguishable from magic." ― Arthur C. Clarke</p>
                         </Bodytextp>
                     </BottomLeft>
-
+                    </Container>
                     <Bottomright>
                         <Bottomimg src={img} alt="Wallet surgery"/>
 
@@ -41,14 +42,12 @@ const Body = styled.div`
   min-height: 660px;
   height: 100%;
 width: 100%;
+overflow: hidden;
 background: ${WalletTheme.tertiary};
 color: #fff;
-@media only screen and (max-width:860px){
-   
-  
-}
+
 `
-const Wrapper = styled(Container)`
+const Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 
@@ -73,6 +72,8 @@ grid-gap: 24px;
 
 @media only screen and (max-width:860px){
     grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "BottomRight"
+    "BottomLeft";
 }
 `
 const BottomLeft = styled.div`
@@ -80,6 +81,9 @@ display: flex;
 flex-direction: column;
 margin: 24px 0;
 
+@media only screen and (max-width:860px){
+    grid-area: BottomLeft;
+}
 `
 const Header = styled(Header3)`
 
@@ -90,13 +94,18 @@ margin: 8px 0 ;
 const Bottomright = styled.div`
 position: relative;
 
+@media only screen and (max-width:860px){
+    grid-area: BottomRight;
+}
+
 `
 const Bottomimg = styled.img`
 max-height: 600px;
-max-width: 745px;
+max-width: 800px;
 height: 100%;
 width: 100%;
 margin: 4px 0 0 0;
+object-fit: cover;
 `
 export default OurJourney
 
