@@ -12,7 +12,7 @@ import Loader from './Loader'
 
 
 
-const ContactForm = () => {
+const ContactForm = ({contactRef}) => {
 
 //initialize form values
     const initial ={
@@ -50,7 +50,7 @@ message
         setForm({...form,[name]:value})
     }
     return (
-        <Body>
+        <Body ref={contactRef}>
             <Wrapper>
                 <Title>
 <Titletext>Get In Touch</Titletext>

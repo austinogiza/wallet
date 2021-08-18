@@ -119,7 +119,7 @@ const Bottomimg = styled.img`
 height: 35px;
 max-width: 301px;
 width: 100%;
-margin: 40px 0 0 0;
+margin: 56px 0 0 0;
 
 `
 

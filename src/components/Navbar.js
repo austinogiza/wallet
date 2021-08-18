@@ -6,7 +6,7 @@ import { WalletTheme } from '../styles/ColorStyles'
 import logo from '../assets/logo.svg'
 import { Link } from 'react-router-dom'
 
-const Navbar = ({workClick,processClick,aboutClick}) => {
+const Navbar = ({workClick,processClick,aboutClick, getInTouch}) => {
 
     const [menu, setMenu]=useState(false)
 
@@ -24,7 +24,7 @@ const Navbar = ({workClick,processClick,aboutClick}) => {
         <Navli onClick={workClick}>How it works</Navli>
         <Navli onClick={processClick}>Process</Navli>
         <Navli onClick={aboutClick}>About us</Navli>
-        <Navli><Navbutton to='/'>Get in Touch</Navbutton></Navli>
+        <Navli><Navbutton to='/' onClick={getInTouch}>Get in Touch</Navbutton></Navli>
     </Navlinksul>
 </Navlink>
 

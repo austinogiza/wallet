@@ -13,6 +13,7 @@ const Home = () => {
     const journeryRef = useRef()
     const timelineRef = useRef()
     const aboutRef = useRef()
+    const contactRef = useRef()
 
     const workClick = ()=>{
 window.scrollTo({ behavior: 'smooth', top: timelineRef.current.offsetTop })
@@ -25,14 +26,18 @@ const aboutClick = ()=>{
 
     window.scrollTo({ behavior: 'smooth', top: aboutRef.current.offsetTop })
 }
+const getInTouchClick = ()=>{
+
+    window.scrollTo({ behavior: 'smooth', top: contactRef.current.offsetTop })
+}
     return (
         <div>
-            <Navbar workClick={workClick} processClick={processClick} aboutClick={aboutClick}/>
+            <Navbar workClick={workClick} processClick={processClick} aboutClick={aboutClick} getInTouch={getInTouchClick}/>
             <Hero />
             <TimeLine timeline={timelineRef}/>
             <OurJourney journeryRef={journeryRef}/>
             <AboutUs aboutRef={aboutRef}/>
-            <ContactForm/>
+            <ContactForm contactRef={contactRef}/>
             <Footer/>
             
         </div>
