@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import {Container} from '../container/Wrapper'
-import { Header2, Header3, bodyText2 } from '../styles/TextStyles'
-import { WalletTheme } from '../styles/ColorStyles'
+import {Container} from 'container/Wrapper'
+import { Header2, Header3, bodyText2 } from 'styles/TextStyles'
+import { WalletTheme } from 'styles/ColorStyles'
 import {FiPhone, FiMail} from 'react-icons/fi'
 import {FaTelegramPlane} from 'react-icons/fa'
 import {AiOutlineSkype} from 'react-icons/ai'
 import { messageInput, TextInput } from '../styles/InputStyles'
-import {contactButton } from '../styles/Buttons'
-import Loader from './Loader'
+import {contactButton } from 'styles/Buttons'
+import Loader from 'components/Loader'
 
 
 

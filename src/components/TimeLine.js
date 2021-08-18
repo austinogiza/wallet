@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Container} from '../container/Wrapper'
-import { Header2, Header3, bodyText } from '../styles/TextStyles'
-import { WalletTheme } from '../styles/ColorStyles'
-import release from '../assets/release.png'
-import touch from '../assets/touch.png'
-import card from '../assets/card.png'
-import delivery from '../assets/Delivery.png'
-import chip from '../assets/chip.png'
+import {Container} from 'container/Wrapper'
+import { Header2, Header3, bodyText } from 'styles/TextStyles'
+import { WalletTheme } from 'styles/ColorStyles'
+import release from 'assets/release.png'
+import touch from 'assets/touch.png'
+import card from 'assets/card.png'
+import delivery from 'assets/Delivery.png'
+import chip from 'assets/chip.png'
 
 const TimeLine = ({timeline}) => {
     return (

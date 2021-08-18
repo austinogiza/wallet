@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import styled, {keyframes}from 'styled-components'
 
 import {BsChevronUp} from 'react-icons/bs'
-import { WalletTheme } from '../styles/ColorStyles'
+import { WalletTheme } from 'styles/ColorStyles'
 
 const BackToTop = () => {
   const [scrolled, setScrolled] = useState(false)

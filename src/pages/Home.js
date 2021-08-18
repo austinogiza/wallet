@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
-import ContactForm from '../components/ContactForm'
-import Footer from '../components/Footer'
-import Hero from '../components/Hero'
-import OurJourney from '../components/OurJourney'
-import TimeLine from '../components/TimeLine'
-import AboutUs from '../components/AboutUs'
-import Navbar from '../components/Navbar'
+import ContactForm from 'components/ContactForm'
+import Footer from 'components/Footer'
+import Hero from 'components/Hero'
+import OurJourney from 'components/OurJourney'
+import TimeLine from 'components/TimeLine'
+import AboutUs from 'components/AboutUs'
+import Navbar from 'components/Navbar'
 
 const Home = () => {
 

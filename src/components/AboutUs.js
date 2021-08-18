@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Container} from '../container/Wrapper'
-import { Header2, Header3, bodyText } from '../styles/TextStyles'
-import { WalletTheme } from '../styles/ColorStyles'
-import img from '../assets/about.png'
+import {Container} from 'container/Wrapper'
+import { Header2, Header3, bodyText } from 'styles/TextStyles'
+import { WalletTheme } from 'styles/ColorStyles'
+import img from 'assets/about.png'
 const AboutUs = ({aboutRef}) => {
     return (
         <Body ref={aboutRef}>

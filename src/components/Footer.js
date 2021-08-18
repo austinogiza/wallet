@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Container} from '../container/Wrapper'
-import { footerMediumText, Header4, footerSmallText,footerLargeText,footerMediumBoldText } from '../styles/TextStyles'
-import { WalletTheme } from '../styles/ColorStyles'
-import logo from '../assets/logo.svg'
-import img from '../assets/altcoinomy.svg'
+import {Container} from 'container/Wrapper'
+import { footerMediumText, Header4, footerSmallText,footerLargeText,footerMediumBoldText } from 'styles/TextStyles'
+import { WalletTheme } from 'styles/ColorStyles'
+import logo from 'assets/logo.svg'
+import img from 'assets/altcoinomy.svg'
 const Footer = () => {
     return (
         <Body>

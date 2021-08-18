@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Container} from '../container/Wrapper'
-import { Header1 } from '../styles/TextStyles'
-import img from '../assets/heroimage.jpg'
+import {Container} from 'container/Wrapper'
+import { Header1 } from 'styles/TextStyles'
+import img from 'assets/heroimage.jpg'
 const Hero = () => {
     return (
         <Body>

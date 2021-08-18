@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import {NavbarContainer} from '../container/Wrapper'
-import { mainButton } from '../styles/Buttons'
-import { WalletTheme } from '../styles/ColorStyles'
-import logo from '../assets/logo.svg'
+import {NavbarContainer} from 'container/Wrapper'
+import { mainButton } from 'styles/Buttons'
+import { WalletTheme } from 'styles/ColorStyles'
+import logo from 'assets/logo.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({workClick,processClick,aboutClick, getInTouch}) => {
