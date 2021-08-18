@@ -4,9 +4,9 @@ import {Container} from '../container/Wrapper'
 import { Header2, Header3, bodyText } from '../styles/TextStyles'
 import { WalletTheme } from '../styles/ColorStyles'
 import img from '../assets/about.png'
-const AboutUs = () => {
+const AboutUs = ({aboutRef}) => {
     return (
-        <Body>
+        <Body ref={aboutRef}>
             <Wrapper>
                 <Title>
 <Titletext>About us</Titletext>

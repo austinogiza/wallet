@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
@@ -8,13 +8,30 @@ import AboutUs from '../components/AboutUs'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
+
+    
+    const journeryRef = useRef()
+    const timelineRef = useRef()
+    const aboutRef = useRef()
+
+    const workClick = ()=>{
+window.scrollTo({ behavior: 'smooth', top: timelineRef.current.offsetTop })
+
+    }
+    const processClick = ()=>{
+        window.scrollTo({ behavior: 'smooth', top: journeryRef.current.offsetTop })
+    }
+const aboutClick = ()=>{
+
+    window.scrollTo({ behavior: 'smooth', top: aboutRef.current.offsetTop })
+}
     return (
         <div>
-            <Navbar/>
+            <Navbar workClick={workClick} processClick={processClick} aboutClick={aboutClick}/>
             <Hero />
-            <TimeLine/>
-            <OurJourney/>
-            <AboutUs/>
+            <TimeLine timeline={timelineRef}/>
+            <OurJourney journeryRef={journeryRef}/>
+            <AboutUs aboutRef={aboutRef}/>
             <ContactForm/>
             <Footer/>
             

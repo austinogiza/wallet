@@ -4,9 +4,10 @@ import {Container} from '../container/Wrapper'
 import { Header2, Header3, bodyText } from '../styles/TextStyles'
 import { WalletTheme } from '../styles/ColorStyles'
 import img from '../assets/journey.png'
-const OurJourney = () => {
+const OurJourney = ({journeryRef}) => {
+
     return (
-        <Body>
+        <Body ref={journeryRef}>
             <Wrapper>
                 <Title>
 <Titletext>Our Journey</Titletext>

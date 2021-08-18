@@ -183,10 +183,10 @@ height: 470px;
 max-width: 380px;
 width: 100%;
 align-items: flex-start;
-padding: 24px;
+padding: 24px 50px;
 justify-content: center;
 @media only screen and (max-width:460px){
-    padding: 16px;
+    padding: 32px;
 }
 
 `
@@ -245,6 +245,7 @@ const Formcontainer = styled.form`
 display: flex;
 flex-direction: column;
 width: 100%;
+align-items: center;
 `
 const Formrow = styled.div`
 width: 100%;
@@ -266,6 +267,8 @@ const Forminput = styled(TextInput)`
 `
 const Formsinglerow = styled.div`
 margin:16px 0;
+width: 100%;
+max-width: 758px;
 `
 const FormMessage = styled(messageInput)`
 

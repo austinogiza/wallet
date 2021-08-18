@@ -9,9 +9,9 @@ import card from '../assets/card.png'
 import delivery from '../assets/Delivery.png'
 import chip from '../assets/chip.png'
 
-const TimeLine = () => {
+const TimeLine = ({timeline}) => {
     return (
-        <Body>
+        <Body ref={timeline}>
             <Wrapper>
                 <Title>
 <Titletext>How it works</Titletext>
@@ -209,7 +209,7 @@ width: 5px;
 background: ${WalletTheme.primary};
 height: 100%;
 position: absolute;
-min-height: 2220px;
+min-height: 2245px;
 left: 50%;
 top: 5px;
 transform: translateX(-50%);
@@ -270,6 +270,7 @@ min-height: 250px;
 height: 100%;
 width: 100%;
 margin: 4px 0 0 0;
+object-fit: cover;
 @media only screen and (max-width:460px){
     min-height: 250px;
     max-height: 350px;

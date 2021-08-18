@@ -37,11 +37,11 @@ wallet.surgery makes all reasonable efforts to obtain reliable information. Howe
                        <Titletext>Breaking into the wallet</Titletext>
                        <Titletext>Your assets released</Titletext>
                        <Titletext>Privacy — Terms © 2020</Titletext>
-
+                       <Bottomimg src={img} alt="Wallet surgery"/>
                     </Bottommiddle>
                  
                     <Bottomend>
-                        <Bottomimg src={img} alt="Wallet surgery"/>
+                    
 
                     </Bottomend>
 
@@ -82,7 +82,7 @@ const Titletext = styled(footerMediumText)`
 const Bottom = styled.div`
 display: grid;
 grid-template-columns: 1fr 2fr 1fr 1fr;
-grid-gap: 24px;
+grid-gap: 40px;
 margin: 40px 0;
 @media only screen and (max-width:860px){
     grid-template-columns: repeat(1,1fr);
@@ -108,7 +108,7 @@ position: relative;
 ::after{
     content:"";
     position: absolute;
-    height: 230px;
+    height: 100%;
     width: 5px;
     background: ${WalletTheme.tertiary};
     top: 0;
@@ -119,7 +119,7 @@ const Bottomimg = styled.img`
 height: 35px;
 max-width: 301px;
 width: 100%;
-margin: 4px 0 0 0;
+margin: 40px 0 0 0;
 
 `
 
