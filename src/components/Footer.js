@@ -36,7 +36,7 @@ wallet.surgery makes all reasonable efforts to obtain reliable information. Howe
                        <Titletext>Send us your wallet</Titletext>
                        <Titletext>Breaking into the wallet</Titletext>
                        <Titletext>Your assets released</Titletext>
-                       <Titletext>Privacy — Terms © 2020</Titletext>
+                       <Titletext>Privacy — Terms &copy; {new Date().getFullYear()}</Titletext>
                        <Bottomimg src={img} alt="Wallet surgery"/>
                     </Bottommiddle>
                  
