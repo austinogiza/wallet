@@ -225,6 +225,16 @@ transition: 0.3s ease;
 :hover{
     color: ${WalletTheme.tertiary};
 }
+
+a{
+    color:${WalletTheme.white};
+    transition: 0.3s ease;
+-moz-transition: 0.3s ease;
+-webkit-transition: 0.3s ease;
+    :hover{
+    color: ${WalletTheme.tertiary};
+}
+}
 `
 const Bottomright = styled.div`
 position: relative;
