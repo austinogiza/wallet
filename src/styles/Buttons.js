@@ -5,6 +5,8 @@ export const contactButton = styled.button`
 height: 45px;
 max-width: 190px;
 /* padding: 16px 24px; */
+border: none;
+  cursor: pointer;
 width: 100%;
 display: flex;
 justify-content: center;
@@ -37,6 +39,8 @@ max-width: 190px;
 width: 100%;
 padding: 16px 24px;
 display: flex;
+border: none;
+  cursor: pointer;
 justify-content: center;
 align-items: center;
 border-radius: 36px;
