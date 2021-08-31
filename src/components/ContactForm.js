@@ -9,6 +9,8 @@ import {AiOutlineSkype} from 'react-icons/ai'
 import { messageInput, TextInput } from '../styles/InputStyles'
 import {contactButton } from 'styles/Buttons'
 import Loader from 'components/Loader'
+import { ContactURL } from 'api/Constants'
+import axios from 'axios'
 
 
 
@@ -16,8 +18,8 @@ const ContactForm = ({contactRef}) => {
 
 //initialize form values
     const initial ={
-        firstname:"",
-lastname:"",
+        first_name:"",
+last_name:"",
 message:"",
 email:"",
 phone:"",
@@ -28,8 +30,8 @@ const [loading,setLoading]=useState(false)
 const [sent,setSent]=useState(false)
 
     const {
-        firstname,
-lastname,
+        first_name,
+last_name,
 email,
 phone,
 message
@@ -39,9 +41,22 @@ message
     const onSubmit = e=>{
         e.preventDefault()
         setLoading(true)
-
-        setSent(true)
-        setForm(initial)
+axios.post(ContactURL, {
+    first_name,
+    last_name,
+    email,
+    phone,
+    message
+})
+.then(res=>{
+    setSent(true)
+    setForm(initial)
+    setLoading(false)
+})
+.catch(err=>{
+    setLoading(false)
+})
+  
 
     }
 
@@ -100,10 +115,10 @@ message
                      <Formcontainer onSubmit={onSubmit}>
                             <Formrow>
                                 <Formcolumn>
-                                <Forminput type="text" placeholder="First Name *" onChange={handleChange} value={firstname} name="firstname" required/>
+                                <Forminput type="text" placeholder="First Name *" onChange={handleChange} value={first_name} name="first_name" required/>
                                 </Formcolumn>
                                 <Formcolumn>
-                                <Forminput type="text" placeholder="Last Name *" onChange={handleChange} value={lastname} name="lastname" required/>
+                                <Forminput type="text" placeholder="Last Name *" onChange={handleChange} value={last_name} name="last_name" required/>
                                 </Formcolumn>
                             </Formrow>
                             <Formrow>
